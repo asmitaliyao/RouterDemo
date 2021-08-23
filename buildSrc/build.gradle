@@ -1,0 +1,15 @@
+// 1、引入 groovy 插件，编译插件工程中的代码
+apply plugin: 'groovy'
+
+// 2、声明仓库的地址
+repositories {
+    mavenCentral()
+    google()
+}
+
+// 3、声明依赖的包
+dependencies {
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:4.1.0'
+}
